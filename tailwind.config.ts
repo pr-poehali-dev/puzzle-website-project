@@ -62,16 +62,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				coral: '#FF6B6B',
-				turquoise: '#4ECDC1',
-				sunny: '#FFE66D',
-				grape: '#A8E6CF',
+				coral: '#000000',
+				turquoise: '#ffffff',
+				sunny: '#666666',
+				grape: '#333333',
 				puzzle: {
-					red: '#FF6B6B',
-					blue: '#4ECDC1',
-					yellow: '#FFE66D',
-					purple: '#A8E6CF',
-					pink: '#FFB6C1'
+					red: '#000000',
+					blue: '#ffffff',
+					yellow: '#666666',
+					purple: '#333333',
+					pink: '#999999'
 				}
 			},
 			borderRadius: {
