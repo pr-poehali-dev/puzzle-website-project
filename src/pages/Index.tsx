@@ -17,7 +17,7 @@ const Index = () => {
               alt="Puzzle Hero" 
               className="w-12 h-12 rounded-full border-2 border-coral"
             />
-            <h1 className="text-3xl font-bold text-coral">🧩 ПазлЛенд</h1>
+            <h1 className="font-bold text-base text-slate-50">улыбашко.ру</h1>
           </div>
           <div className="flex items-center gap-4">
             <Badge variant="secondary" className="bg-sunny text-black text-lg px-4 py-2">
