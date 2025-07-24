@@ -7,26 +7,26 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 font-comic">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 font-comic">
       {/* Header */}
-      <header className="p-6 bg-white/90 backdrop-blur-sm border-b-4 border-black">
+      <header className="p-6 bg-black/90 backdrop-blur-sm border-b-4 border-white">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img 
               src="/img/40ba69f1-c936-4026-9317-f12656bc0452.jpg" 
               alt="Puzzle Hero" 
-              className="w-12 h-12 rounded-full border-2 border-black grayscale"
+              className="w-12 h-12 rounded-full border-2 border-white grayscale"
             />
-            <h1 className="text-3xl font-bold text-black">🧩 ПазлЛенд</h1>
+            <h1 className="text-3xl font-bold text-white">🧩 ПазлЛенд</h1>
           </div>
           <div className="flex items-center gap-4">
             <Badge variant="secondary" className="bg-gray-600 text-white text-lg px-4 py-2">
               <Icon name="Star" size={16} className="mr-2" />
               Уровень 5
             </Badge>
-            <Avatar className="border-2 border-gray-400">
+            <Avatar className="border-2 border-white">
               <AvatarImage src="/placeholder.svg" />
-              <AvatarFallback className="bg-gray-300 text-black">ТЫ</AvatarFallback>
+              <AvatarFallback className="bg-gray-700 text-white">ТЫ</AvatarFallback>
             </Avatar>
           </div>
         </div>
@@ -39,21 +39,21 @@ const Index = () => {
             <img 
               src="/img/40ba69f1-c936-4026-9317-f12656bc0452.jpg" 
               alt="Главный персонаж" 
-              className="w-32 h-32 mx-auto rounded-full border-4 border-black shadow-lg grayscale"
+              className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg grayscale"
             />
           </div>
-          <h2 className="text-5xl font-bold text-black mb-4 drop-shadow-lg">
+          <h2 className="text-5xl font-bold text-white mb-4 drop-shadow-lg">
             Добро пожаловать в мир головоломок! 🌟
           </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Решай головоломки, собирай награды и создавай своего уникального персонажа!
           </p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" className="bg-black hover:bg-gray-800 text-white text-xl px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all">
+            <Button size="lg" className="bg-white hover:bg-gray-200 text-black text-xl px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all">
               <Icon name="Play" size={24} className="mr-2" />
               Начать игру!
             </Button>
-            <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white text-xl px-8 py-4 rounded-full">
+            <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-black text-xl px-8 py-4 rounded-full"
               <Icon name="Trophy" size={24} className="mr-2" />
               Мои достижения
             </Button>
@@ -62,7 +62,7 @@ const Index = () => {
 
         {/* Progress Section */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card className="bg-white/95 backdrop-blur-sm border-2 border-gray-400">
+          <Card className="bg-gray-900/95 backdrop-blur-sm border-2 border-gray-600">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-black flex items-center justify-center gap-2">
                 <Icon name="Zap" size={24} />
@@ -72,27 +72,27 @@ const Index = () => {
             <CardContent className="space-y-4">
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium">Опыт</span>
-                  <span className="text-sm font-medium">750 / 1000</span>
+                  <span className="text-sm font-medium text-gray-300">Опыт</span>
+                  <span className="text-sm font-medium text-gray-300">750 / 1000</span>
                 </div>
                 <Progress value={75} className="h-3" />
               </div>
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium">Решено головоломок</span>
-                  <span className="text-sm font-medium">23</span>
+                  <span className="text-sm font-medium text-gray-300">Решено головоломок</span>
+                  <span className="text-sm font-medium text-gray-300">23</span>
                 </div>
                 <Progress value={60} className="h-3" />
               </div>
               <div className="text-center pt-4">
-                <Badge className="bg-gray-600 text-white text-lg px-4 py-2">
+                <Badge className="bg-gray-700 text-white text-lg px-4 py-2">
                   🎯 До следующего уровня: 250 XP
                 </Badge>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="bg-white/95 backdrop-blur-sm border-2 border-gray-600">
+          <Card className="bg-gray-900/95 backdrop-blur-sm border-2 border-gray-600">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-black flex items-center justify-center gap-2">
                 <Icon name="Award" size={24} />
@@ -108,17 +108,17 @@ const Index = () => {
                 />
               </div>
               <div className="grid grid-cols-3 gap-2">
-                <Badge className="bg-black text-white justify-center py-2">🏆 Новичок</Badge>
-                <Badge className="bg-gray-800 text-white justify-center py-2">⭐ Мастер</Badge>
-                <Badge className="bg-gray-600 text-white justify-center py-2">🎨 Творец</Badge>
-                <Badge variant="outline" className="justify-center py-2 border-black">💎 Эксперт</Badge>
-                <Badge variant="outline" className="justify-center py-2 border-black">🚀 Гений</Badge>
-                <Badge variant="outline" className="justify-center py-2 border-black">👑 Легенда</Badge>
+                <Badge className="bg-white text-black justify-center py-2">🏆 Новичок</Badge>
+                <Badge className="bg-gray-300 text-black justify-center py-2">⭐ Мастер</Badge>
+                <Badge className="bg-gray-400 text-black justify-center py-2">🎨 Творец</Badge>
+                <Badge variant="outline" className="justify-center py-2 border-white text-white">💎 Эксперт</Badge>
+                <Badge variant="outline" className="justify-center py-2 border-white text-white">🚀 Гений</Badge>
+                <Badge variant="outline" className="justify-center py-2 border-white text-white">👑 Легенда</Badge>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="bg-white/95 backdrop-blur-sm border-2 border-gray-300">
+          <Card className="bg-gray-900/95 backdrop-blur-sm border-2 border-gray-600">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-black flex items-center justify-center gap-2">
                 <Icon name="Users" size={24} />
@@ -126,12 +126,12 @@ const Index = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center space-y-4">
-              <Avatar className="w-20 h-20 mx-auto border-4 border-gray-300">
+              <Avatar className="w-20 h-20 mx-auto border-4 border-gray-600">
                 <AvatarImage src="/placeholder.svg" />
-                <AvatarFallback className="bg-gray-300 text-black text-2xl">🤖</AvatarFallback>
+                <AvatarFallback className="bg-gray-700 text-white text-2xl">🤖</AvatarFallback>
               </Avatar>
               <div>
-                <h3 className="font-bold text-lg mb-2">Кубик-Умник</h3>
+                <h3 className="font-bold text-lg mb-2 text-white">Кубик-Умник</h3>
                 <div className="space-y-2">
                   <Button variant="outline" size="sm" className="w-full border-black">
                     <Icon name="Palette" size={16} className="mr-2" />
@@ -153,34 +153,34 @@ const Index = () => {
 
         {/* Game Categories */}
         <section>
-          <h2 className="text-3xl font-bold text-black text-center mb-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">
             🎲 Категории головоломок
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-black text-white hover:scale-105 transition-transform cursor-pointer">
+            <Card className="bg-white text-black hover:scale-105 transition-transform cursor-pointer">
               <CardContent className="p-6 text-center">
                 <Icon name="Puzzle" size={48} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Классика</h3>
                 <p className="text-sm opacity-90">Традиционные пазлы</p>
-                <Badge className="mt-3 bg-white text-black">12 уровней</Badge>
+                <Badge className="mt-3 bg-black text-white">12 уровней</Badge>
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-800 text-white hover:scale-105 transition-transform cursor-pointer">
+            <Card className="bg-gray-300 text-black hover:scale-105 transition-transform cursor-pointer">
               <CardContent className="p-6 text-center">
                 <Icon name="Brain" size={48} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Логика</h3>
                 <p className="text-sm opacity-90">Умные задачки</p>
-                <Badge className="mt-3 bg-white text-gray-800">8 уровней</Badge>
+                <Badge className="mt-3 bg-black text-white">8 уровней</Badge>
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-600 text-white hover:scale-105 transition-transform cursor-pointer">
+            <Card className="bg-gray-400 text-black hover:scale-105 transition-transform cursor-pointer">
               <CardContent className="p-6 text-center">
                 <Icon name="Clock" size={48} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">На время</h3>
                 <p className="text-sm opacity-90">Быстрые вызовы</p>
-                <Badge className="mt-3 bg-white text-gray-600">15 уровней</Badge>
+                <Badge className="mt-3 bg-black text-white">15 уровней</Badge>
               </CardContent>
             </Card>
 
@@ -189,38 +189,38 @@ const Index = () => {
                 <Icon name="Sparkles" size={48} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Магия</h3>
                 <p className="text-sm opacity-90">Волшебные загадки</p>
-                <Badge className="mt-3 bg-black text-white">6 уровней</Badge>
+                <Badge className="mt-3 bg-white text-black">6 уровней</Badge>
               </CardContent>
             </Card>
           </div>
         </section>
 
         {/* Stats */}
-        <section className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 border-2 border-black">
-          <h2 className="text-3xl font-bold text-center text-black mb-8">📊 Твоя статистика</h2>
+        <section className="bg-gray-900/95 backdrop-blur-sm rounded-2xl p-8 border-2 border-white">
+          <h2 className="text-3xl font-bold text-center text-white mb-8">📊 Твоя статистика</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold text-black mb-2">23</div>
-              <div className="text-sm text-gray-600">Решено головоломок</div>
+              <div className="text-3xl font-bold text-white mb-2">23</div>
+              <div className="text-sm text-gray-400">Решено головоломок</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-600 mb-2">5:42</div>
-              <div className="text-sm text-gray-600">Лучшее время</div>
+              <div className="text-3xl font-bold text-gray-300 mb-2">5:42</div>
+              <div className="text-sm text-gray-400">Лучшее время</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-800 mb-2">750</div>
-              <div className="text-sm text-gray-600">Очки опыта</div>
+              <div className="text-3xl font-bold text-gray-200 mb-2">750</div>
+              <div className="text-sm text-gray-400">Очки опыта</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-black mb-2">7</div>
-              <div className="text-sm text-gray-600">Дней подряд</div>
+              <div className="text-3xl font-bold text-white mb-2">7</div>
+              <div className="text-sm text-gray-400">Дней подряд</div>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="text-center py-8 text-gray-700">
+      <footer className="text-center py-8 text-gray-300">
         <p className="text-lg">🖤 Создавай, играй, развивайся вместе с ПазлЛенд!</p>
       </footer>
     </div>
