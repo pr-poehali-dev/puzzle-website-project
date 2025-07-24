@@ -61,6 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				coral: '#FF6B6B',
+				turquoise: '#4ECDC1',
+				sunny: '#FFE66D',
+				grape: '#A8E6CF',
+				puzzle: {
+					red: '#FF6B6B',
+					blue: '#4ECDC1',
+					yellow: '#FFE66D',
+					purple: '#A8E6CF',
+					pink: '#FFB6C1'
 				}
 			},
 			borderRadius: {
@@ -88,7 +99,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-slow': 'bounce 2s infinite',
+				'wiggle': 'wiggle 1s ease-in-out infinite'
 			}
 		}
 	},
