@@ -42,12 +42,9 @@ const Index = () => {
               className="w-32 h-32 mx-auto rounded-full border-4 border-coral shadow-lg"
             />
           </div>
-          <h2 className="text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            Добро пожаловать в мир головоломок! 🌟
-          </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Решай головоломки, собирай награды и создавай своего уникального персонажа!
-          </p>
+          <h2 className="text-5xl text-white mb-4 drop-shadow-lg font-bold">привет солнышко!! </h2>
+          <p className="mb-8 max-w-2xl mx-auto text-lg text-sky-50">сайт сделан в целях улучшить твое настроение, отвлечь тебя от чего-то плохого и заставить тебя улыбаться :3
+</p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="bg-coral hover:bg-coral/90 text-white text-xl px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all">
               <Icon name="Play" size={24} className="mr-2" />
